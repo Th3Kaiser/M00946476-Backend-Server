@@ -14,4 +14,6 @@ The back-end server for the After School Activities booking app, built with Node
 
 ### Still To Do
 
-8 - Deploy to render.com
+8 ## Deployed
+
+8 - Deployed to render.com: https://M00946476-backend-server.onrender.com
