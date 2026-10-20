@@ -2,12 +2,14 @@ const express = require('express');
 const cors = require('cors');
 
 const { MongoClient } = require('mongodb');
-const config = require('./config');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-const client = new MongoClient(config.mongoURI);
+const mongoURI = process.env.MONGO_URI || require('./config').mongoURI;
+const client = new MongoClient(mongoURI);
+
+
 let db;
 
 async function connectToDatabase() {
